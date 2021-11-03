@@ -1,8 +1,7 @@
-import { Vue } from "vue";
+import { createApp } from "vue";
 
-var app = new Vue({
-	el: "#app",
-	data: {
-		message: "hello vue",
-	},
-});
+import App from "./App.vue";
+createApp(App).mount("#app");
+
+// import Counter from "./components/Counter.vue";
+// createApp(Counter).mount("#app");
